@@ -3,7 +3,7 @@ import { addItem, checkItem, minusItem, removeItem } from '../../../store/slice/
 import cls from './ProductCard.module.css';
 import { Item } from '../../../store/types/types';
 import { AppDispatch, useAppDispatch, useAppSelector } from '../../../store/store';
-import { Card, Checkbox, IconButton, Text, Title } from '@vkontakte/vkui';
+import { Card, Checkbox, Div, IconButton, Text, Title } from '@vkontakte/vkui';
 
 import {
   Icon24DeleteOutline,
@@ -56,19 +56,19 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     () => (
       <Card mode="shadow" className={cls.product_card}>
         <Checkbox onClick={handleChecked} checked={product.checked} />
-        <div className={cls.product_img_container}>
+        <Div className={cls.product_img_container}>
           <img src={image} alt={title} className={cls.product_img} />
-        </div>
+        </Div>
 
-        <div>
+        <Div>
           <Title level="3">{title}</Title>
           <p className={cls.product_description}>{description}</p>
-        </div>
+        </Div>
 
-        <div className={cls.product_controls}>
+        <Div className={cls.product_controls}>
           <p className={cls.product_price}>{Math.round(total_price)} ₽</p>
 
-          <div className={cls.product_counter}>
+          <Div className={cls.product_counter}>
             <IconButton
               onClick={handleDecrement}
               label="уменьшить количество на 1"
@@ -81,12 +81,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <IconButton onClick={handleIncrement} label="увеличить количество на 1">
               <Icon28AddCircleOutline height={36} width={36} color="#008cff" />
             </IconButton>
-          </div>
+          </Div>
 
           <IconButton onClick={handleRemove} label="удалить" className={cls.product_delete}>
             <Icon24DeleteOutline color="red" />
           </IconButton>
-        </div>
+        </Div>
       </Card>
     ),
     [product, products],

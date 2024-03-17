@@ -7,10 +7,9 @@ import { Item } from '../../store/types/types';
 import Loader from '../Loader/Loader';
 import { getCartProducts } from '../../store/selectors/getCartProducts';
 import { getProductLoader } from '../../store/selectors/getProductLoader';
-import { CardGrid, Group } from '@vkontakte/vkui';
+import { CardGrid, Div, Group } from '@vkontakte/vkui';
 
 const ProductList: React.FC = () => {
-
   const productLoading = useAppSelector(getProductLoader);
   const products = useAppSelector(getCartProducts);
   const dispatch: AppDispatch = useAppDispatch();
@@ -21,9 +20,9 @@ const ProductList: React.FC = () => {
 
   if (productLoading) {
     return (
-      <div className={cls.product_list_container_loader}>
+      <Div className={cls.product_list_container_loader}>
         <Loader />
-      </div>
+      </Div>
     );
   }
 

@@ -11,27 +11,25 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 const App: React.FC = () => {
   return (
-    <>
-      <ConfigProvider>
-        <Provider store={store}>
-          <AdaptivityProvider>
-            <AppRoot>
-              <View activePanel="cart-panel">
-                <Panel id="cart-panel">
-                  <PanelHeader>
-                    <Header />
-                  </PanelHeader>
-                  <Div className="app_container">
-                    <ProductList />
-                    <TotalSummary />
-                  </Div>
-                </Panel>
-              </View>
-            </AppRoot>
-          </AdaptivityProvider>
-        </Provider>
-      </ConfigProvider>
-    </>
+    <ConfigProvider>
+      <Provider store={store}>
+        <AdaptivityProvider>
+          <AppRoot>
+            <View activePanel="cart-panel">
+              <Panel id="cart-panel">
+                <PanelHeader>
+                  <Header />
+                </PanelHeader>
+                <Div className="app_container">
+                  <ProductList />
+                  <TotalSummary />
+                </Div>
+              </Panel>
+            </View>
+          </AppRoot>
+        </AdaptivityProvider>
+      </Provider>
+    </ConfigProvider>
   );
 };
 
