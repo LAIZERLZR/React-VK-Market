@@ -66,7 +66,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Div>
 
         <Div className={cls.product_controls}>
-          <p className={cls.product_price}>{Math.round(total_price)} ₽!</p>
+          <p className={cls.product_price}>{Math.round(total_price)} ₽</p>
 
           <Div className={cls.product_counter}>
             <IconButton
