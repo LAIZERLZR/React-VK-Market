@@ -8,6 +8,7 @@ import Loader from '../Loader/Loader';
 import { getCartProducts } from '../../store/selectors/getCartProducts';
 import { getProductLoader } from '../../store/selectors/getProductLoader';
 import { CardGrid, Div, Group } from '@vkontakte/vkui';
+import CartEmpty from '../CartEmpty/CartEmpty';
 
 const ProductList: React.FC = () => {
   const productLoading = useAppSelector(getProductLoader);
@@ -22,6 +23,14 @@ const ProductList: React.FC = () => {
     return (
       <Div className={cls.product_list_container_loader}>
         <Loader />
+      </Div>
+    );
+  }
+
+  if (products.length === 0) {
+    return (
+      <Div className={cls.product_list_container_loader}>
+        <CartEmpty />
       </Div>
     );
   }
