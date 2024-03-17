@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #333336;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  color: white;
+  margin: 0 0 0 20px;
+}

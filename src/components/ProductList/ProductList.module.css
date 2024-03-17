@@ -1,0 +1,20 @@
+.product_list_container {
+  display: flex;
+  grid-column: 1 / 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product_list_container_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product_list {
+  background: red;
+  color: red;
+}

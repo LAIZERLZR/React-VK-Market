@@ -1,0 +1,14 @@
+body {
+  background: #222226;
+  height: auto !important;
+}
+
+.app_container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 3fr 1fr;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  color: white;
+  margin-top: 50px;
+}

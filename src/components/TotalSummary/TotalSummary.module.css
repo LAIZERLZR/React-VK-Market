@@ -1,0 +1,16 @@
+.total {
+  display: flex;
+  justify-content: space-between;
+
+  grid-column-start: 2;
+  grid-row-start: 1;
+
+  height: 50vh;
+}
+
+.total_price {
+  margin: 0;
+  font-size: 26px;
+  line-height: 24px;
+  font-weight: 700;
+}
