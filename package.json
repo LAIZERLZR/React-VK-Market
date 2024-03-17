@@ -1,6 +1,7 @@
 {
   "name": "react-vk-market",
   "version": "0.1.0",
+  "homepage": "https://LAIZERLZR.github.io/React-VK-Market",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
