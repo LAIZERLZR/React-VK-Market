@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-VK-Market/static/css/main.a11575dc.css",
+    "main.js": "/React-VK-Market/static/js/main.127299ac.js",
+    "index.html": "/React-VK-Market/index.html",
+    "main.a11575dc.css.map": "/React-VK-Market/static/css/main.a11575dc.css.map",
+    "main.127299ac.js.map": "/React-VK-Market/static/js/main.127299ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11575dc.css",
+    "static/js/main.127299ac.js"
+  ]
+}
